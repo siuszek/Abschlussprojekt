@@ -6,17 +6,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body>
-
-
         <div class="container">
             <h1 class="adsimple-121317788">Wie funktioniert das?</h1>
             <p class="adsimple-121317788">Hier erfährst du, wie die Website funktioniert</p>
             <p class="adsimple-121317788">
-                <strong>For any additional questions feel free to Contact Us:</strong> <br><br>
-                <strong>E-Mail:</strong> <a href="mailto:office@sutterhealth.com">office@sutterhealth.com</a> <br><br>
-                <strong>Telephone Number:</strong> (925) 584-4439<br />
-                <strong>Office Hours:</strong> Monday - Friday (8am-6pm)<br /> <br>
-                <strong>Fax Number:</strong> 44444/55555<br />
+                <strong>Füge deine Bilder hinzu!</strong> <br><br>
+                Schau dir die Bilder von anderen an!<br><br>
+                <strong>Verlinke deine Bilder mit der Weltkarte!</strong><br><br>
+                Verschlagworte deine Bilder!<br /> <br>
+                <strong>Tausche dich mit anderen User_innen aus!</strong> <br>
             </p>
             <div>
                 <img src="src/traveller_world.jfif" alt="logo" height = 500 width = 700>
