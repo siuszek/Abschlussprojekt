@@ -1,6 +1,6 @@
 <?php
     if (isset($_POST["submit"])) {
-        $ziel = "./uploads/";
+        $ziel = "./image/";
         $zieldatei = $ziel . basename($_FILES["data"]["name"]);
 
         $fileExt = explode('.',basename($_FILES["data"]["name"]));
