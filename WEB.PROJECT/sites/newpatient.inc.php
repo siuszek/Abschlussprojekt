@@ -1,5 +1,5 @@
 <div class="container jumbotron">
-    <h2 class="display-3 text-muted">Welcome to Patient Management Form</h2>
+    <h2 class="display-3 text-muted">Welcome to User Management Form</h2>
     <form action="index.php?site=newpatient" method="POST">
         <table>
             <tr>
@@ -56,6 +56,17 @@
             var_dump($v);
             echo ' <br><br>';
         }
+
+        if ($_POST["submit"]){
+            $db->registerUser($neuePatient);
+            $erstellt = "Benutzer registriert!";
+        }else{
+            $tmp = $_POST["submit"];
+            $user->setId($tmp);
+            $db->updateUser($neuePatient);
+            $erstellt = "Benutzer bearbeitet!";
+        }
+    
         echo ' </div>';
     }
 }

@@ -18,6 +18,12 @@
         <li class="nav-item">
                 <a class="nav-link" href="index.php?site=help<?php echo !empty($_SESSION['username']) ? "&user=" . $_SESSION['username'] : ""; ?>">Help</a>
         </li>
+        <li class="nav-item">
+                <a class="nav-link" href="index.php?site=chat<?php echo !empty($_SESSION['username']) ? "&user=" . $_SESSION['username'] : ""; ?>">Chat</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="index.php?site=map<?php echo !empty($_SESSION['username']) ? "&user=" . $_SESSION['username'] : ""; ?>">Map</a>
+        </li>
         <?php
         if (empty($_SESSION['username'])) //login , if youre logged in: logout is added to nav bar "Logout"
         ;

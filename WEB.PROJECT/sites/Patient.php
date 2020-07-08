@@ -1,6 +1,7 @@
 ﻿<?php
 class Patient // class is created, private variables are set, to be filled with collected data 
 {
+    private $id;
     private $Anrede;
     private $Firstname;
     private $Lastname;
@@ -25,6 +26,16 @@ class Patient // class is created, private variables are set, to be filled with 
         $this->setPasswort($Passwort);
     }
 //setters and getters 
+
+    public function getId()
+    {
+    return $this->id;
+    }
+    public function setId($id)
+    {
+    $this->id = $id;
+    }
+
     public function getAnrede()
     {
         return $this->Anrede;

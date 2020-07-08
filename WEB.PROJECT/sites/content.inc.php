@@ -1,5 +1,8 @@
 <div class="main">
     <?php
+
+    $db = new DB("localhost","julia","password","WebProject"); 
+   
     //if the user is on the site and it is set to the home php
     $site = isset($_GET["site"]) ? $_GET["site"] : "home";
     if (empty($_SESSION['username']) && $site === "spezial") {
@@ -23,6 +26,13 @@
             break;
         case 'help':
             include "sites/help.php";
+            break;
+        case 'chat':
+            include "chat/loginn.php";
+            break;
+        case 'map':
+            include "map/leafletMap.php";
+            include "sites/gallery.php";
             break;
         default: //defualt
             include "sites/home.inc.php";

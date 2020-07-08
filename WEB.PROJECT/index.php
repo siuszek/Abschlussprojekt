@@ -1,3 +1,8 @@
+<?php
+include "db/DB.class.php";
+$db = new DB("localhost","julia","password","WebProject");
+?>
+
 <!doctype html>
 <html>
 
@@ -6,10 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="mysheet.css">
-    <title>Patientenverwaltung</title>
+    <title>Picture Cloud</title>
 </head>
 
 <body>
+
+
+<div class="container">
+        <?php echo (isset($db))? $db->message : ""?>
+</div>
+
     <?php 
     $current_site = isset($_GET["site"]) ? $_GET["site"] : "home";
     session_start();

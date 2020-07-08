@@ -52,7 +52,7 @@ closedir($handle);
                 <h6> Img-Upload </h6>
                 <form enctype="multipart/form-data" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
                         <input type="file"  name="file"> 
-                        <input type="submit" name="submit" value="Upload">
+                        <input type="submit" name="photosubmit" value="Upload">
                 </form>
             </div>
         

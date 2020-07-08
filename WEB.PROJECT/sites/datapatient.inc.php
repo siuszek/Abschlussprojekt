@@ -31,6 +31,7 @@ if (empty(($_SESSION['username']))) { //login
             <thead class="thead-light">
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col"></th>
                     <th scope="col">Salutation</th>
                     <th scope="col">Firstname</th>
                     <th scope="col">Lastname</th>
@@ -57,7 +58,7 @@ if (empty(($_SESSION['username']))) { //login
                             $tester++; //count the total values of the patient (11 inputs)
                             if ($value != 'Patient')
                                 echo '<th scope="row">' . $value . '</th>';
-                            if ($tester == 10) //post all the data if its vollstaendig (11 varibales) then display delete button. 
+                            if ($tester == 11) //post all the data if its vollstaendig (11 varibales) then display delete button. 
                                 echo '<th scope="row"><form method="POST" action="index.php?site=datapatient'.$user.'"><button type="submit" name="delete'.$cnt.'" class="btn btn-dark">DEL</button></th>';
                         }
                         echo "</tr>"; //row is complete with data 
