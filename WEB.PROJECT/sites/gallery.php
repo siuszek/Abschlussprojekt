@@ -50,7 +50,7 @@ closedir($handle);
             <div class="col-md-2">
                 
                 <h6> Img-Upload </h6>
-                <form enctype="multipart/form-data" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
+                <form enctype="multipart/form-data" method="POST" action="upload.php">
                         <input type="file"  name="file"> 
                         <input type="submit" name="photosubmit" value="Upload">
                 </form>
