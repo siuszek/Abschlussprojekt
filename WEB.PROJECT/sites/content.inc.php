@@ -31,7 +31,7 @@
             include "chat/loginn.php";
             break;
         case 'map':
-            include "map/leafletMap.php";
+            include "map/leafletMap.inc.php";
             include "sites/gallery.php";
             break;
         default: //defualt

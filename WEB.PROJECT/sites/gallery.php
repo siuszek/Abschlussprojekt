@@ -50,14 +50,14 @@ closedir($handle);
             <div class="col-md-2">
                 
                 <h6> Img-Upload </h6>
-                <form enctype="multipart/form-data" method="POST" action="upload.php">
+                <form enctype="multipart/form-data" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
                         <input type="file"  name="file"> 
                         <input type="submit" name="photosubmit" value="Upload">
                 </form>
             </div>
         
             <div class="col-md-9 col-md-offset-1">
-            <?php 
+            <?php //<?php echo $_SERVER['PHP_SELF']?
                 foreach($alles as $item){ 
                 ?><a data-fancybox="gallery" href="<?php echo $pfad . $item ?>"> 
                     <img class="img-thumbnail rounded ml-auto mr-auto" width="200" src="<?php echo $pfad . $item  ?>">
